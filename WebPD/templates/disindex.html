@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <title>PD| Parkinson Disease</title>
+</head>
+<style>
+     body {
+            background-color: #050c27; /* Set background color to dark blue */
+            color:#f6f7fb; /* Set font color to white */
+            font-family: "Segoe UI";
+     }
+    #main-footer {
+        color: #eeeeef; /* Change font color to white */
+        font-family: "Segoe UI";
+        background: #010a14; /* Change background color to dark blue */
+        text-align: center;
+        margin-top: 75px;
+        padding: 16px;
+        bottom: 8px;
+    }
+
+    .img_holder img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+</style>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #000712;">
+                <a class="navbar-brand" href="#"><b>PARKANALYTICA</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Get Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about2">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/disindex2">Disease Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pd">Voice Test</a>  
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/enquiry">Enquiry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/help2">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+
+</header>
+    <br/>
+    <br/>
+    <div class="container">
+        <h1 style="text-align:center; color: rgb(251, 251, 67);">Parkinson's Disease</h1>
+        <p style="text-align:left">Parkinson's disease (PD), is a chronic neurodegenerative illness primarily affecting the central nervous system that impacts both the motor and non-motor systems of the body. Non-motor symptoms increase in frequency as the condition worsens and typically appear gradually. Common signs of parkinsonism include tremors, rigidity, slowness of movement, and trouble balancing. In more severe stages, advanced Parkinson's disease dementia falls, and neuropsychiatric issues such as irregular sleep, psychosis, mood swings, or behavioural disorders may occur.</p>
+        
+        <div style="text-align: center; margin-top: 20px">
+            <img style="max-width: 600px" src="static\img\pd.png" /><br/><br/>
+        </div>
+
+        <h3 style="color:  rgb(251, 251, 67);">Signs and Symptoms of Parkinson's Disease</h3>
+        <p>1. Tremor: Tremor is the most common symptom of Parkinson's disease. It usually begins in one hand and may eventually affect the other hand or other parts of the body. The tremor is often described as a "pill-rolling" tremor.<br>
+        2. Slowed Movement (Bradykinesia): People with Parkinson's disease may take longer to start moving and may have difficulty completing tasks that involve movement.<br>
+        3. Rigidity: Rigidity is a feeling of stiffness in the muscles. It can make it difficult to move the limbs and can also cause pain.<br>
+        4. Loss of Balance and Coordination (Postural Instability): People with Parkinson's disease may have difficulty with balance and coordination. This can make them fall more often.<br>
+        5. Loss of Smell (Hyposmia): Many people with Parkinson's disease lose their sense of smell. This can be an early symptom of the disease.<br>
+        6. Speech Changes: People with Parkinson's disease may speak softly, rapidly, or in a monotone. They may also have difficulty swallowing.<br>
+        7. Sleep Problems: People with Parkinson's disease may have trouble sleeping through the night. They may also experience daytime sleepiness.<br>
+        8. Small Handwriting (Micrographia): People with Parkinson's disease may find that their handwriting becomes smaller and more difficult to read.<br>
+        9. Stooped Posture: People with Parkinson's disease may develop a stooped posture. This is caused by the rigidity of the muscles in the back.<br>
+        10. Facial Masking: People with Parkinson's disease may have a blank or expressionless face.</p>
+
+        <div style="text-align: center; margin-top: 20px">
+            <img style="max-width: 600px" src="static\img\parkinsonssymptoms.png" /><br/><br/>
+        </div>
+    
+        <h3 style="color: rgb(251, 251, 67);">Causes and Risk Factors</h3>
+        <p>Parkinson's disease is a complex condition, and the exact cause remains unknown. However, researchers believe it's a combination of genetic and environmental factors.</p>
+        <p><strong>Genetics:</strong></p>
+        <ul>
+            <li>Heritability: Up to 40% of Parkinson's cases may have a genetic link.</li>
+            <li>Family History: Having a close relative with Parkinson's increases your risk, but it's still relatively low unless many family members are affected.</li>
+            <li>Specific Genes: Mutations in certain genes like SNCA, LRRK2, and GBA1 have been linked to Parkinson's development. These mutations don't
+
+            <li>guarantee the disease, but they increase the risk.</li>
+            </ul>
+            <p><strong>Environment:</strong></p>
+            <ul>
+                <li>Pesticide Exposure: Exposure to certain pesticides, particularly herbicides like paraquat and rotenone, may be a risk factor.</li>
+                <li>Heavy Metals: Contact with heavy metals like manganese, iron, and lead may also increase the risk.</li>
+                <li>Head Injuries: A history of severe head trauma can be a risk factor.</li>
+            </ul>
+            <p><strong>Other Potential Factors:</strong></p>
+            <ul>
+                <li>Melanoma: People with a history of melanoma may have a higher risk of developing Parkinson's, although the connection is unclear.</li>
+                <li>Uric Acid Levels: Low levels of uric acid in the blood may be associated with an increased risk.</li>
+                <li>H. Pylori Infection: This stomach infection can interfere with the absorption of certain Parkinson's medications.</li>
+            </ul>
+    
+            <h3 style="color: rgb(251, 251, 67);">Clinical Research</h3>
+            <p><strong>Parkinson Progression Marker Initiative (PPMI):</strong> This international study is investigating biomarkers that can be used to track the development and progression of Parkinson's disease. The PPMI includes people with Parkinson's disease, people who may be at risk for developing the disease (prodromal PD), and healthy control participants. By studying these groups, researchers hope to identify biomarkers that can be used to diagnose Parkinson's disease earlier and to develop new treatments that can slow or stop the progression of the disease.</p>
+            <p><strong>NLY01 Trial:</strong> This study is investigating the safety and effectiveness of an investigational drug called NLY01 in people with early, untreated Parkinson's disease. NLY01 is a type of drug called a monoclonal antibody that is designed to target and clear alpha-synuclein, a protein that builds up in the brains of people with Parkinson's disease. Researchers believe that alpha-synuclein may play a role in the development and progression of Parkinson's disease. The NLY01 trial is a Phase 1 study, which means that it is the first time that the drug is being tested in people.</p>
+            <p><strong>Functional Magnetic Resonance Imaging (fMRI) for Deep Brain Stimulation (DBS):</strong> This study is investigating the use of fMRI to monitor brain activity during DBS surgery for Parkinson's disease. DBS is a surgical procedure that is used to treat the symptoms of Parkinson's disease. In DBS, electrodes are implanted in the brain and then connected to a pacemaker-like device that sends electrical pulses to the brain. The fMRI study is designed to help researchers understand how DBS works and to identify the best targets for DBS surgery.</p>
+        
+            <hr>
+        </div>
+        
+    
+        
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    

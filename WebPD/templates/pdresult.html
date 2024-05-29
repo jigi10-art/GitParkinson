@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson Disease | Assessment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #02172c;
+            color: #ffff;
+            font-family: Arial, sans-serif;
+            padding-top: 80px;
+        }
+        #assess {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .btn-primary {
+            background-color: #000712;
+            border-color: #000712;
+        }
+        .btn-primary:hover {
+            background-color: #000000;
+            border-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="assess" class="container">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-5">Parkinson's Disease Assessment</h1>
+            
+        </div>
+        <br>
+        <div class="container themed-container">
+            <h1 style="text-align: center;">
+                {% if prediction == 1 %}
+                    <span class="text-danger">Patient is at high risk of Parkinson's Disease</span>
+                {% elif prediction == 0 %}
+                    <span class="text-success">Patient is at low risk of Parkinson's Disease</span>
+                {% endif %}
+            </h1>
+        </div>
+        <p style="text-align: center;">Click <a href="/parkinson_info">here</a> to learn more about Parkinson's Disease</p>
+
+        <br>
+        <br>
+        <div class="col-12">
+            <div class="text-center">
+                <h5>&copy; Parkinson Disease. All Rights Reserved</h5>
+            </div>
+            <hr class="light">
+        </div>
+    </div>
+    
+</body>
+</html>
